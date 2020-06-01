@@ -5,7 +5,7 @@ gpio.setwarnings(False)
 def get_distancer ():
     gpio.setmode (gpio.BCM)
     trigr = 18 # 26 16
-    echor = 21 #20
+    echor = 22 #20
     gpio.setup(trigr,gpio.OUT)
     gpio.setup(echor,gpio.IN)
     if gpio.input (echor):                                               # If the 'Echo' pin is already high
